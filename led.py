@@ -3,8 +3,32 @@ from time import sleep
 
 led = LED(17)
 
-while True:
-    led.on()
-    sleep(1)
-    led.off()
-    sleep(1)
+def dot():
+	led.on()
+	sleep(1)
+	led.off()
+	sleep(1)
+
+
+def dash():
+	led.on()
+	sleep(0.1)
+	led.off()
+	sleep(0.1)
+	
+dash()
+dash()
+dot()
+dash()
+dot()
+dash()
+dash()
+dash()
+dot()
+dash()
+dash()
+dash()
+dot()
+dash()
+dot()
+dot()
